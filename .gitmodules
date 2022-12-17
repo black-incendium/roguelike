@@ -1,0 +1,3 @@
+[submodule "scripts/glass"]
+	path = scripts/glass
+	url = https://github.com/black-incendium/glass.git
