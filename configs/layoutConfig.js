@@ -1,12 +1,15 @@
 export const layoutConfig = {
 
+    gameBackground: {
+
+        type: 'sprite',
+        assets: ['gameBg']
+    },
+
     fish1: {
 
         type: 'sprite',
         assets: ['highRes'],
-        x: 0, y: 0,
-        scale:1,
-        rotation: 0,
 
         children: {
 
@@ -16,7 +19,6 @@ export const layoutConfig = {
                 assets: ['highRes'],
                 x: 100, y: 100,
                 scale:0.5,
-                rotation: 0,
             },
         }
     },
@@ -26,16 +28,12 @@ export const layoutConfig = {
         type: 'sprite',
         assets: ['highRes'],
         x: 2048-474, y: 1152-474,
-        scale:1,
-        rotation: 0,
     },
 
     fishContainer: {
 
-        type: 'container',
         x: 500, y:500,
-        scale: 0.5,
-        rotation: 0,
+        scaleX: 1, scaleY:0.5,
 
         children: {
 
@@ -44,8 +42,6 @@ export const layoutConfig = {
                 type: 'sprite',
                 assets: ['highRes'],
                 x: 0, y: 0,
-                scale:1,
-                rotation: 0,
             },
 
             fishInATank2: {
@@ -53,8 +49,6 @@ export const layoutConfig = {
                 type: 'sprite',
                 assets: ['highRes'],
                 x: 500, y: 0,
-                scale:1,
-                rotation: 0,
             },
 
             fishInATank3: {
@@ -62,8 +56,6 @@ export const layoutConfig = {
                 type: 'sprite',
                 assets: ['highRes'],
                 x: 0, y: 500,
-                scale:1,
-                rotation: 0,
             },
 
             fishInATank4: {
@@ -71,8 +63,6 @@ export const layoutConfig = {
                 type: 'sprite',
                 assets: ['highRes'],
                 x: 500, y: 500,
-                scale:1,
-                rotation: 0,
             },
         }
     }

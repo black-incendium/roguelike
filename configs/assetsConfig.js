@@ -5,5 +5,6 @@ export const assetsConfig = {
 
         {name: 'highRes', path: 'highResolutionTestImage.png'},
         {name: 'low', path: 'lowResolutionTestImage.png'},
+        {name: 'gameBg', path: 'gameBg.png'},
     ]
 }
