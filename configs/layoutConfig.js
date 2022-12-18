@@ -3,13 +3,15 @@ export const layoutConfig = {
     gameBackground: {
 
         type: 'sprite',
-        assets: ['gameBg']
+        assets: ['gameBg'],
+        alpha: 1
     },
 
     fish1: {
 
         type: 'sprite',
         assets: ['highRes'],
+        alpha: 0.2,
 
         children: {
 
@@ -19,6 +21,7 @@ export const layoutConfig = {
                 assets: ['highRes'],
                 x: 100, y: 100,
                 scale:0.5,
+                alpha: 1
             },
         }
     },
@@ -32,8 +35,9 @@ export const layoutConfig = {
 
     fishContainer: {
 
-        x: 500, y:500,
-        scaleX: 1, scaleY:0.5,
+        x: 600, y:10,
+        scaleX: 0.5, scaleY:0.25,
+        alpha: 0.5,
 
         children: {
 
