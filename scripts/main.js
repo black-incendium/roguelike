@@ -12,5 +12,3 @@ glass.initialize({
     gameData: gameConfig,
     layoutData: layoutConfig
 });
-
-// gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
