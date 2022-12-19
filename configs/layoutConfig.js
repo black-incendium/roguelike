@@ -7,35 +7,29 @@ export const layoutConfig = {
         alpha: 1
     },
 
-    fish1: {
+    mapContainer:{
 
-        type: 'sprite',
-        assets: ['highRes'],
-        alpha: 0.2,
+        x: 1, y: 1,
+        scale: 3,
+
+        childrenCommonProperties: {
+
+            type: 'sprite',
+            assets: ['tileTest'],
+        },
 
         children: {
 
-            fish2: {
-
-                type: 'sprite',
-                assets: ['highRes'],
-                x: 100, y: 100,
-                scale:0.5,
-                alpha: 1
-            },
+            tile0x0: {x: 0, y: 0},
+            tile0x1: {x: 32, y: 0},
+            tile1x0: {x: 0, y: 32},
+            tile1x1: {x: 32, y: 32},
         }
-    },
-
-    fish3: {
-
-        type: 'sprite',
-        assets: ['highRes'],
-        x: 2048-474, y: 1152-474,
     },
 
     fishContainer: {
 
-        x: 600, y:10,
+        x: 1500, y:800,
         scaleX: 0.5, scaleY:0.25,
         alpha: 0.5,
 
