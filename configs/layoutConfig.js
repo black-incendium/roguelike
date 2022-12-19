@@ -10,20 +10,20 @@ export const layoutConfig = {
     mapContainer:{
 
         x: 1, y: 1,
-        scale: 3,
 
         childrenCommonProperties: {
 
             type: 'sprite',
             assets: ['tileTest'],
+            scale: 3,
         },
 
         children: {
 
             tile0x0: {x: 0, y: 0},
-            tile0x1: {x: 32, y: 0},
-            tile1x0: {x: 0, y: 32},
-            tile1x1: {x: 32, y: 32},
+            tile0x1: {x: 96, y: 0},
+            tile1x0: {x: 0, y: 96},
+            tile1x1: {x: 96, y: 96},
         }
     },
 
@@ -33,35 +33,18 @@ export const layoutConfig = {
         scaleX: 0.5, scaleY:0.25,
         alpha: 0.5,
 
+        childrenCommonProperties: {
+            
+            type: 'sprite',
+            assets: ['highRes'],
+        },
+
         children: {
 
-            fishInATank1: {
-
-                type: 'sprite',
-                assets: ['highRes'],
-                x: 0, y: 0,
-            },
-
-            fishInATank2: {
-
-                type: 'sprite',
-                assets: ['highRes'],
-                x: 500, y: 0,
-            },
-
-            fishInATank3: {
-
-                type: 'sprite',
-                assets: ['highRes'],
-                x: 0, y: 500,
-            },
-
-            fishInATank4: {
-
-                type: 'sprite',
-                assets: ['highRes'],
-                x: 500, y: 500,
-            },
+            fishInATank1: {x: 0, y: 0,},
+            fishInATank2: {x: 500, y: 0,},
+            fishInATank3: {x: 0, y: 500,},
+            fishInATank4: {x: 500, y: 500,},
         }
     }
 }
