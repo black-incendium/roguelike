@@ -4,7 +4,7 @@ import { gameConfig } from '../configs/gameConfig.js';
 import { layoutConfig } from '../configs/layoutConfig.js';
 
 const canvas = document.querySelector('canvas');
-const gl = canvas.getContext('webgl2');
+const gl = canvas.getContext('webgl2', {stencil: true});
 glass.initialize({
     canvas,
     gl,
