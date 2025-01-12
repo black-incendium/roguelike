@@ -6,3 +6,6 @@
 loading screen
 flow chart
 pivot points handling
+hitboxes
+drawing pivotPoints/hitboxes?
+texts
