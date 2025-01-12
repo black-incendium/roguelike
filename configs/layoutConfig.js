@@ -13,7 +13,7 @@ export const layoutConfig = {
         rotation: 0,
 
         mask: {
-            x: -20, y: 0, 
+            x: -100, y: 0, 
             width: 600, height: 612
         },
 
@@ -28,7 +28,7 @@ export const layoutConfig = {
         children: {
 
             tile0x0: {assets: ['spritesheetTile1'],x: 0, y: 0},
-            tile0x1: {assets: ['spritesheetTile2'],x: 406, y: 0, rotation: -45},
+            tile0x1: {assets: ['spritesheetTile2'],x: 406, y: 0, rotation: 0},
             tile1x0: {assets: ['spritesheetTile3'],x: 0, y: 256},
             tile1x1: {assets: ['spritesheetTile4'],x: 256, y: 256},
         }
