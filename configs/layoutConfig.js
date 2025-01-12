@@ -9,12 +9,12 @@ export const layoutConfig = {
 
     mapContainer:{
 
-        x: 1, y: 1,
+        x: 100, y: 1,
         rotation: 0,
 
         mask: {
-            x: 20, y: 0, 
-            width: 512, height: 512
+            x: -20, y: 0, 
+            width: 600, height: 612
         },
 
         childrenCommonProperties: {
@@ -27,10 +27,10 @@ export const layoutConfig = {
 
         children: {
 
-            tile0x0: {x: 0, y: 0},
-            tile0x1: {x: 306, y: 0},
-            tile1x0: {x: 0, y: 256},
-            tile1x1: {x: 256, y: 256},
+            tile0x0: {assets: ['spritesheetTile1'],x: 0, y: 0},
+            tile0x1: {assets: ['spritesheetTile2'],x: 406, y: 0, rotation: -45},
+            tile1x0: {assets: ['spritesheetTile3'],x: 0, y: 256},
+            tile1x1: {assets: ['spritesheetTile4'],x: 256, y: 256},
         }
     },
 
@@ -38,8 +38,8 @@ export const layoutConfig = {
 
         x: 1000, y:800,
         scaleX: 1, scaleY: 1,
-        alpha: 0.5,
-        rotation: 0,
+        alpha: 1,
+        rotation: 90,
 
         childrenCommonProperties: {
             
@@ -62,10 +62,10 @@ export const layoutConfig = {
         
                 children: {
         
-                    tile0x0: {x: 0, y: 0},
-                    tile0x1: {x: 256, y: 0},
-                    tile1x0: {x: 0, y: 256},
-                    tile1x1: {x: 256, y: 256},
+                    secondTile0x0: {x: 0, y: 0},
+                    secondTile0x1: {x: 256, y: 0},
+                    secondTile1x0: {x: 0, y: 256},
+                    secondTile1x1: {x: 256, y: 256},
                 }
             },
             fishInATank2: {x: 500, y: 0,},
