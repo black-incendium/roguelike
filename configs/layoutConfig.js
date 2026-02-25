@@ -1,14 +1,17 @@
-export const layoutConfig = {
+export const layoutConfig = [
 
-    gameBackground: {
+    {
 
+        id: 'gameBackground',
         type: 'sprite',
         assets: ['gameBg'],
         alpha: 1
     },
 
-    mapContainer:{
+    {
 
+        id: 'mapContainer',
+        type: 'container',
         x: 100, y: 1,
         rotation: 0,
 
@@ -25,17 +28,18 @@ export const layoutConfig = {
             rotation: -10
         },
 
-        children: {
+        children: [
 
-            tile0x0: {assets: ['spritesheetTile1'],x: 0, y: 0},
-            tile0x1: {assets: ['spritesheetTile2'],x: 406, y: 0, rotation: 0},
-            tile1x0: {assets: ['spritesheetTile3'],x: 0, y: 256},
-            tile1x1: {assets: ['spritesheetTile4'],x: 256, y: 256},
-        }
+            {id: 'tile0x0', type: 'sprite', assets: ['spritesheetTile1'],x: 0, y: 0},
+            {id: 'tile0x1', type: 'sprite', assets: ['spritesheetTile2'],x: 406, y: 0, rotation: 0},
+            {id: 'tile1x0', type: 'sprite', assets: ['spritesheetTile3'],x: 0, y: 256},
+            {id: 'tile1x1', type: 'sprite', assets: ['spritesheetTile4'],x: 256, y: 256},
+        ]
     },
 
-    fishContainer: {
-
+    {
+        id: 'fishContainer',
+        type: 'container',
         x: 1000, y:800,
         scaleX: 1, scaleY: 1,
         alpha: 1,
@@ -47,9 +51,12 @@ export const layoutConfig = {
             assets: ['highRes'],
         },
 
-        children: {
+        children: [
 
-            fishInATank1: {
+            {
+                id: 'fishInATank1',
+                type: 'sprite',
+                assets: ['highRes'],
                 x: 0, y: 0,
 
                 childrenCommonProperties: {
@@ -60,17 +67,17 @@ export const layoutConfig = {
                     rotation: 30,
                 },
         
-                children: {
+                children: [
         
-                    secondTile0x0: {x: 0, y: 0},
-                    secondTile0x1: {x: 256, y: 0},
-                    secondTile1x0: {x: 0, y: 256},
-                    secondTile1x1: {x: 256, y: 256},
-                }
+                    {id: 'secondTile0x0', type: 'sprite', assets: ['testTile2'], x: 0, y: 0},
+                    {id: 'secondTile0x1', type: 'sprite', assets: ['testTile2'], x: 256, y: 0},
+                    {id: 'secondTile1x0', type: 'sprite', assets: ['testTile2'], x: 0, y: 256},
+                    {id: 'secondTile1x1', type: 'sprite', assets: ['testTile2'], x: 256, y: 256},
+                ]
             },
-            fishInATank2: {x: 500, y: 0,},
-            fishInATank3: {x: 0, y: 500,},
-            fishInATank4: {x: 500, y: 500,},
-        }
+            {id: 'fishInATank2', assets: ['highRes'], type: 'sprite', x: 500, y: 0,},
+            {id: 'fishInATank3', assets: ['highRes'], type: 'sprite', x: 0, y: 500,},
+            {id: 'fishInATank4', assets: ['highRes'], type: 'sprite', x: 500, y: 500,},
+        ]
     }
-}
+]
