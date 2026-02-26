@@ -33,7 +33,7 @@ export const layoutConfig = [
             {id: 'tile0x0', type: 'sprite', assets: ['spritesheetTile1'], scale: 8, x: 0, y: 0},
             {id: 'tile0x1', type: 'sprite', assets: ['spritesheetTile2'], scale: 8, x: 406, y: 0, rotation: 0},
             {id: 'tile1x0', type: 'sprite', assets: ['spritesheetTile3'], scale: 8, x: 0, y: 256},
-            {id: 'tile1x1', type: 'sprite', assets: ['spritesheetTile4'], scale: 8, x: 256, y: 256},
+            {id: 'tile1x1', type: 'sprite', assets: ['spritesheetTile4'], scale: 8, x: 256, y: 256, pivotPoint:  {x: 16, y: 16}},
         ]
     },
 
