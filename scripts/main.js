@@ -32,10 +32,10 @@ function startMainFlow() {
         targetValue: 3600,
         duration: 100000,
         updateCallback: (currentValue) => {
-            componentsManager.getComponentById('tile0x1').rotation = currentValue;
-            componentsManager.getComponentById('tile1x1').rotation = currentValue;
-            componentsManager.getComponentById('tile1x0').rotation = currentValue;
-            componentsManager.getComponentById('tile0x0').rotation = currentValue;
+            componentsManager.getComponentById('tile0x1').rotation = currentValue * 1;
+            componentsManager.getComponentById('tile1x1').rotation = currentValue * 2;
+            componentsManager.getComponentById('tile1x0').rotation = currentValue * 3;
+            componentsManager.getComponentById('tile0x0').rotation = currentValue * 4;
         }
     });
 
